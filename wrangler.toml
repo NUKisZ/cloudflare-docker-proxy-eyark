@@ -24,13 +24,13 @@ CUSTOM_DOMAIN = "eyark.com"
 [env.production]
 name = "cloudflare-docker-proxy"
 # routes = [
-#   { pattern = "docker.libcuda.so", custom_domain = true },
-#   { pattern = "quay.libcuda.so", custom_domain = true },
-#   { pattern = "gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s-gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s.libcuda.so", custom_domain = true },
-#   { pattern = "ghcr.libcuda.so", custom_domain = true },
-#   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
+#   { pattern = "docker.eyark.com", custom_domain = true },
+#   { pattern = "quay.eyark.com", custom_domain = true },
+#   { pattern = "gcr.eyark.com", custom_domain = true },
+#   { pattern = "k8s-gcr.eyark.com", custom_domain = true },
+#   { pattern = "k8s.eyark.com", custom_domain = true },
+#   { pattern = "ghcr.eyark.com", custom_domain = true },
+#   { pattern = "cloudsmith.eyark.com", custom_domain = true },
 # ]
 
 [env.production.vars]
@@ -39,7 +39,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
+# route = { pattern = "docker-staging.eyark.com", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
